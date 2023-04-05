@@ -89,7 +89,7 @@
         </tbody>
     </table>
     <br/>
-    <p>On est le <strong id="nowDate">...</strong> <strong id="nowTime">...</strong></p>
+    <p>On est le <strong id="today">...</strong></p>
     <p><small><small>Méthode de calcul : <strong>France UOIF</strong></small></small></p>
 </div>
 <script>
@@ -130,8 +130,7 @@
     const nextPrayerTime = toGrenobleTime(prayerTimes.timeForPrayer(next));
 
     const data = {
-        nowDate: toGrenobleDay(today),
-        nowTime: toGrenobleTime(today),
+        today: toGrenobleTime(today),
         fajr : toGrenobleTime(prayerTimes.fajr),
         dhuhr : toGrenobleTime(prayerTimes.dhuhr),
         asr : toGrenobleTime(prayerTimes.asr),
